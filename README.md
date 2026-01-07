@@ -24,13 +24,14 @@ Designed to showcase front-end development skills, UI polish, and practical e-co
 ---
 
 ## 📸 Screenshot
-![ComfyCart Landing](images/landing-screenshot.png)
+![ComfyCart Landing]<img width="1920" height="1080" alt="Ecommerce landing page" src="https://github.com/user-attachments/assets/dfe3557c-64b6-4e95-b1af-b5fbc0ffba1b" />
+
 
 ---
 
 ## 🔗 Live Demo
-[View App on Netlify](https://todo-abirami.netlify.app)  
-*(Replace with your ecommerce Netlify link once deployed)*
+[View App on Netlify][(https://ecomlan.netlify.app/)]  
+
 
 ---
 
