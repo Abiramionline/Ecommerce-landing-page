@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ComfyCart | E-Commerce Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">Comfy<span>Cart</span></div>
+
+      <nav class="nav" id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#products">Products</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#cta">Get Started</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle">☰</button><!-- Cart icon with count -->
+      <button class="btn nav-cart" id="cart-toggle" aria-label="Open cart">
+        🛒 <span id="cart-count">0</span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="tag">New Collection 2025</p>
+        <h1>Comfortable. Stylish. Affordable.</h1>
+        <p class="hero-subtitle">
+          Shop premium everyday essentials with fast delivery, easy returns,
+          and secure checkout — all in one place.
+        </p>
+        <div class="hero-actions">
+          <a href="#products" class="btn primary-btn">Shop Now</a>
+          <a href="#features" class="btn secondary-btn">Learn More</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <h3>10k+</h3>
+            <p>Happy Customers</p>
+          </div>
+          <div>
+            <h3>4.8★</h3>
+            <p>Average Rating</p>
+          </div>
+          <div>
+            <h3>24h</h3>
+            <p>Fast Dispatch</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="hero-badge">Free Shipping</div>
+        <div class="hero-main-card">
+          <div class="hero-product-img"></div>
+          <div class="hero-product-info">
+            <h3>Comfy Lounge Set</h3>
+            <p class="price">₹1,999 <span>₹2,499</span></p>
+            <p class="stock">In stock • Ships in 24 hours</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section id="features" class="section features-section">
+    <div class="container">
+      <h2 class="section-title">Why Shop With Us?</h2>
+      <p className="section-subtitle">
+        We make online shopping simple, safe, and satisfying.
+      </p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>Fast Delivery</h3>
+          <p>Get your orders delivered within 2–4 business days with real-time tracking.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Easy Returns</h3>
+          <p>No questions asked 7-day return policy on eligible products.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Secure Payments</h3>
+          <p>100% secure checkout with UPI, cards, and net banking support.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Quality Assured</h3>
+          <p>Every product goes through strict quality checks before shipping.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS SECTION -->
+  <section id="products" class="section products-section">
+    <div class="container">
+      <h2 class="section-title">Featured Products</h2>
+      <p class="section-subtitle">
+        Handpicked bestsellers loved by our customers.
+      </p>
+
+      <div class="products-grid" id="products-grid">
+        <!-- products -->
+
+        <!-- Product 1 -->
+        
+        <article class="product-card">
+          <div class="product-img product-img-1"></div>
+          <div class="product-body">
+            <h3>Cozy Cotton Tee</h3>
+            <p class="product-desc">Soft, breathable, and perfect for daily wear.</p>
+            <p class="product-price">₹799 <span>₹999</span></p>
+            <button
+              class="btn product-btn add-to-cart"
+              data-id="tee-1"
+              data-name="Cozy Cotton Tee"
+              data-price="799"
+            >Add to Cart</button>
+          </div>
+        </article>
+
+        <!--Product 2-->
+        <article class="product-card">
+          <div class="product-img product-img-2"></div>
+          <div class="product-body">
+            <h3>Soft Lounge Pants</h3>
+            <p class="product-desc">Relaxed fit pants with ultra-soft fabric.</p>
+            <p class="product-price">₹1,299 <span>₹1,699</span></p>
+            <button
+              class="btn product-btn add-to-cart"
+              data-id="pants-1"
+              data-name="Soft Lounge Pants"
+              data-price="1299"
+            >Add to Cart</button>
+          </div>
+        </article>
+
+          <!--Product 3-->
+        <article class="product-card">
+          <div class="product-img product-img-3"></div>
+          <div class="product-body">
+            <h3>Everyday Hoodie</h3>
+            <p class="product-desc">Warm, lightweight hoodie for everyday use.</p>
+            <p class="product-price">₹1,599 <span>₹1,999</span></p>
+            <button
+              class="btn product-btn add-to-cart"
+              data-id="hoodie-1"
+              data-name="Everyday Hoodie"
+              data-price="1599"
+            >Add to Cart</button>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product-card">
+          <div class="product-img product-img-4"></div>
+          <div class="product-body">
+            <h3>Comfy Slippers</h3>
+            <p class="product-desc">Memory foam slippers for maximum comfort.</p>
+            <p class="product-price">₹599 <span>₹799</span></p>
+          <button
+            class="btn product-btn add-to-cart"
+            data-id="slippers-1"
+            data-name="Comfy Slippers"
+            data-price="599"
+          >Add to Cart</button>
+          </div>
+        </article>
+        
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section id="testimonials" class="section testimonials-section">
+    <div class="container">
+      <h2 class="section-title">What Our Customers Say</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p class="quote">
+            “Amazing quality and super fast delivery. My go-to store now!”
+          </p>
+          <p class="author">— Priya, Chennai</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="quote">
+            “The loungewear is so comfortable, I ordered a second set.”
+          </p>
+          <p class="author">— Kavya, Bengaluru</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="quote">
+            “Easy returns and helpful support. Shopping felt completely hassle-free.”
+          </p>
+          <p class="author">— Aishwarya, Coimbatore</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section id="cta" class="section cta-section">
+    <div class="container cta-content">
+      <div>
+        <h2>Ready to upgrade your everyday comfort?</h2>
+        <p>Sign up and get exclusive offers, early access to drops, and more.</p>
+      </div>
+      <form class="cta-form">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit" class="btn primary-btn">Get Offers</button>
+      </form>
+    </div>
+  </section>
+  <!-- Cart drawer -->
+  <aside id="cart-drawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Your cart</h3>
+      <button id="cart-close" class="btn secondary-btn">Close</button>
+    </div>
+
+    <ul id="cart-items" class="cart-items"></ul>
+
+    <div class="cart-footer">
+      <p class="cart-total">
+        Total: <span id="cart-total">₹0</span>
+      </p>
+      <button class="btn primary-btn" id="checkout-btn">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Backdrop -->
+  <div id="cart-backdrop" class="cart-backdrop" hidden></div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2025 ComfyCart. All rights reserved.</p>
+      <p>Made with ❤ by Abirami (Front-End Developer)</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
